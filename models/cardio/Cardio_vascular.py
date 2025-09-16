@@ -5,8 +5,8 @@ import os
 from tensorflow.keras.models import load_model
 
 def cardio_vascular():
-    model = joblib.load("models\cardio\heart_failure_model.pkl")
-    S_Scaler = joblib.load("models\cardio\scaler.pkl")
+    model = joblib.load("models/cardio/heart_failure_model.pkl")
+    S_Scaler = joblib.load("models/cardio/scaler.pkl")
 
 
     # Use columns to center the input form
