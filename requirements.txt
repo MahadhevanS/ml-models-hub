@@ -2,7 +2,8 @@ streamlit>=1.26.0
 streamlit-drawable-canvas
 numpy
 joblib
-tensorflow
+tensorflow==2.20.0
+keras==3.11.3
 pandas
 matplotlib
 scikit-learn
