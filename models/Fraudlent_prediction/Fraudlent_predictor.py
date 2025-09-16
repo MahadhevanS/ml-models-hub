@@ -4,9 +4,9 @@ import joblib
 
 # IMPORTANT: You must have your pre-trained model files in the same directory.
 try:
-    model = joblib.load("models/Fraudlent_prediction/fraud_predictor.pkl")
+    model = joblib.load("models/Fraudlent_prediction/Fraud_predictor.pkl")
 except FileNotFoundError:
-    st.error("Error: fraud_predictor.pkl model file not found.")
+    st.error("Error: Fraud_predictor.pkl model file not found.")
     st.stop()
 
 # Define the input parameters and their min/max ranges from your training data
