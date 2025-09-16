@@ -2,11 +2,10 @@ import streamlit as st
 import numpy as np
 import joblib
 import os
-import keras
 from tensorflow.keras.models import load_model
 
 def cardio_vascular():
-    model = keras.saving.load_model("models\cardio\heart_failure_model.keras")
+    model = joblib.load("models\cardio\heart_failure_model.pkl")
     S_Scaler = joblib.load("models\cardio\scaler.pkl")
 
 
