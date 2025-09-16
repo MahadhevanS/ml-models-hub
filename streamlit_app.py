@@ -3,7 +3,6 @@ import base64
 import nltk
 import os
 
-# Set NLTK data path to a writeable directory if not already set
 nltk_data_dir = os.path.join(os.getcwd(), 'nltk_data')
 if not os.path.exists(nltk_data_dir):
     os.makedirs(nltk_data_dir)
@@ -12,7 +11,7 @@ nltk.data.path.append(nltk_data_dir)
 # Download the 'stopwords' corpus if it's not already present
 try:
     nltk.data.find('corpora/stopwords')
-except nltk.downloader.DownloadError:
+except LookupError:
     nltk.download('stopwords', download_dir=nltk_data_dir)
     
 from models.cardio.Cardio_vascular import cardio_vascular
