@@ -9,6 +9,6 @@ scikit-learn
 Pillow
 torch
 transformers
-opencv-python
+opencv-python-headless
 requests
 nltk
