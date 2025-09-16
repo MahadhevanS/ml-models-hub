@@ -5,7 +5,7 @@ import os
 from tensorflow.keras.models import load_model
 
 def cardio_vascular():
-    model = load_model("models\cardio\heart_failure_model.h5")
+    model = load_model("models\cardio\heart_failure_model.keras")
     S_Scaler = joblib.load("models\cardio\scaler.pkl")
 
 
