@@ -2,12 +2,13 @@ import streamlit as st
 import numpy as np
 import tensorflow as tf
 import cv2
+import keras
 from streamlit_drawable_canvas import st_canvas
 
 def digitRecognizer():
    
     #Load the model
-    model = tf.keras.models.load_model("models/digit_recognition/best_model.h5")
+    model = keras.saving.load_model("models/digit_recognition/best_model.keras")
     st.markdown("<h3>Draw a Digit Here</h3>",unsafe_allow_html=True)
     # --- User Interface for Drawing (Centered) ---
     col_empty1, col_canvas, col_empty2 = st.columns([1.3, 1, 1])
