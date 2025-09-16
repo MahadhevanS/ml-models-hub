@@ -1,3 +1,11 @@
+[server]
+enableCORS = true
+[client]
+enableFavicon = true
+
+[global]
+runOnSave = true
+
 [theme]
 primaryColor="#f63366"
 backgroundColor="#000000"
@@ -7,3 +15,6 @@ font="Franklin Gothic Medium Cond"
 
 [tool]
 packages = "libgl1-mesa-glx"
+
+[logger]
+level = "info"
